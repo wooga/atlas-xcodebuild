@@ -38,7 +38,7 @@ abstract class AbstractXcodeArchiveTask extends AbstractXcodeTask implements Xco
         }))
     }
 
-    private static String maybe(String prefix, String value) {
+    static String maybe(String prefix, String value) {
         if (GUtil.isTrue(value)) {
             if (GUtil.isTrue(prefix)) {
                 return "-".concat(value);

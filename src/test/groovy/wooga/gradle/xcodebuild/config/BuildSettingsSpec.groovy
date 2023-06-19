@@ -1,6 +1,5 @@
 package wooga.gradle.xcodebuild.config
 
-import org.gradle.internal.impldep.org.apache.maven.lifecycle.MissingProjectException
 import spock.lang.Specification
 import spock.lang.Unroll
 

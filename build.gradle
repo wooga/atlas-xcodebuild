@@ -15,7 +15,7 @@
  */
 
 plugins {
-    id 'net.wooga.plugins' version '4.0.0'
+    id 'net.wooga.plugins' version '5.0.0-rc.2'
     id 'net.wooga.snyk' version '0.12.0'
     id 'net.wooga.snyk-gradle-plugin' version '0.6.0'
     id "net.wooga.cve-dependency-resolution" version "0.4.0"
@@ -52,5 +52,5 @@ dependencies {
 		implementation "com.wooga.xcodebuild:xcpretty:[1,2["
     	implementation "com.googlecode.plist:dd-plist:1.23"
     implementation 'com.wooga.gradle:gradle-commons:[1,2['
-    testImplementation 'com.wooga.gradle:gradle-commons-test:[1,2['
+    testImplementation 'com.wooga.gradle:gradle-commons-test:[2.0.0-rc.1,3['
 }

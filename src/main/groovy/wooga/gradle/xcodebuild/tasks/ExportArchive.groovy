@@ -77,7 +77,7 @@ class ExportArchive extends AbstractXcodeArchiveTask implements XcodeExportSpec 
                 copySpec.with {
                     from temporaryDir.path
                     include "*.ipa"
-                    into destinationDir.get().asFile
+                    into destinationDir.asFile
                     it.rename { filename ->
                         archiveName.get()
                     }
