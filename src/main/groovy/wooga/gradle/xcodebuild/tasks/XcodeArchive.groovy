@@ -41,13 +41,7 @@ class XcodeArchive extends AbstractXcodeArchiveTask implements XcodeArchiveActio
 
     XcodeArchive() {
         super()
-
-        xcArchivePath = destinationDir.map(new Transformer<Directory, Directory>() {
-            @Override
-            Directory transform(Directory directory) {
-                directory.dir(archiveName.get())
-            }
-        })
+        xcArchivePath = destinationDir.dir(archiveName)
 
         setInternalArguments(project.provider({
             List<String> arguments = new ArrayList<String>()

@@ -127,8 +127,8 @@ abstract class AbstractXcodeTaskIntegrationSpec<T extends AbstractXcodeTask> ext
         "colorize"    | _                | "never"                            | "String"      | true
         "colorize"    | _                | "auto"                             | "String"      | true
 
-        value = wrapValueBasedOnType(rawValue, type) { type ->
-            switch (type) {
+        value = wrapValueBasedOnType(rawValue, type) { _type ->
+            switch (_type) {
                 case ConsoleSettings.ColorOption.simpleName:
                     return ConsoleSettings.ColorOption.name + ".${rawValue.toString()}"
                 default:
